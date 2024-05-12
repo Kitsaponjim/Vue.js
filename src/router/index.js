@@ -24,7 +24,18 @@ const routes = [
         path: '/me',
         name: 'me',
         component: () => import('../views/Me.vue') // import ได้ 2 แบบ <- แบบที่ 2
-      }
+      },
+      {
+        path: '/me2',
+        name: 'me2',
+        component: () => import('../views/Me2.vue') // import ได้ 2 แบบ <- แบบที่ 2
+      },
+      {
+        path: '/me3',
+        name: 'me3',
+        component: () => import('../views/Me3.vue')
+      },
+  
     ]
   },
   
