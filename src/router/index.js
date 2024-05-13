@@ -31,9 +31,9 @@ const routes = [
         component: () => import("../views/Me2.vue"), // import ได้ 2 แบบ <- แบบที่ 2
       },
       {
-        path: "/me4",
-        name: "me4",
-        component: () => import("../views/Me4.vue"),
+        path: "/Slicegrade",
+        name: "Slicegrade",
+        component: () => import("../views/Slicegrade.vue"),
       },
       {
         path: '/simple',
