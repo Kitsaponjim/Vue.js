@@ -12,19 +12,20 @@
                     <v-col cols="12" md="2"></v-col>
                     <v-col cols="12" md="2">
                         <v-avatar class="avatar" size="250">
-                            <v-img src="../assets/jim.jpg" class="image-with-border"></v-img>
+                            <v-img src="../assets/cat.jpg" class="image-with-border"></v-img>
                         </v-avatar>
                     </v-col>
-                    <v-col cols="12" md="2">
+                    <v-col cols="12" md="1"></v-col>
+                    <v-col cols="12" md="3">
                         <div class="name">
                             <h1>Kitsapon Sutto</h1>
                             <p>#นอนน้อยไม่กลัวกลัวไม่ได้นอน</p>
                             <v-btn @click="display()">Click here</v-btn>
                         </div>
                     </v-col>
-                    <v-col cols="12" md="6">
-                        <!-- <v-img src="../assets/jim.jpg" height="200" width="200"></v-img> -->
-                    </v-col>
+                    <!-- <v-col cols="12" md="6">
+                        <v-img src="../assets/jim.jpg" height="200" width="200"></v-img>
+                    </v-col> -->
                 </v-row>
             </div>
             <div class="sec3">
@@ -32,7 +33,6 @@
                     <v-col cols="12" md="2"></v-col>
                     <v-col cols="12" md="4">
                         <v-card class="into">
-                            <v-icon type="mdi" path="account"></v-icon>
                             <h2>แนะนำตัว</h2>
                             <v-divider></v-divider>
                             <p><strong>ชื่อ:</strong> <span>{{ name }}</span></p>
@@ -63,16 +63,7 @@
                             <p><strong>กีฬาที่ชอบ:</strong> <span>{{ likesport }}</span></p>
                             <p><strong>สัตว์ที่ชอบ:</strong> <span>{{ likeanimal }}</span></p>
                         </v-card>
-                        <v-cole cols="12" md="2">
-                            <!-- <v-card class="into">
-                            <h2>ข้อดีข้อเสีย</h2>
-                            <v-divider></v-divider>
-                            <p><strong>ข้อดี:</strong> <span>{{ strength }}</span></p>
-                            <p><strong>ข้อเสีย:</strong> <span>{{ weakness }}</span></p>
-                        </v-card> -->
-                        </v-cole>
                     </v-col>
-                    <v-cole cols="12" md="2"></v-cole>
                     <v-col cols="12" md="4">
                         <v-card class="into">
                             <h2>ช่องทางการติดต่อ</h2>
@@ -86,12 +77,11 @@
                 <div class="sec5">
                     <v-row>
                         <v-col>
-                            <v-cole cols="12" md="2"></v-cole>
-                            <v-cole cols="12" md="4">
+                            <v-col cols="12" md="4ุ">
                                 <div class="pig">
                                     <card />
                                 </div>
-                            </v-cole>
+                            </v-col>
                         </v-col>
                     </v-row>
                 </div>
@@ -167,12 +157,14 @@ body {
 
 .avatar {
     position: relative;
-    top: -55px;
+    top: -60px;
+    /*-55px*/
 }
 
 .name {
     position: relative;
     top: -45px;
+    /*-45px*/
     color: #282c34;
 }
 
@@ -204,9 +196,14 @@ body {
     margin-bottom: 20px;
 }
 
-v-icon {
-    justify-content: center;
-}
+/* 
+.sec1,
+.sec2,
+.sec3,
+.sec4,
+.sce5{
+    border:1px solid red
+} */
 
 .pig {
     margin: 0px 15px;
