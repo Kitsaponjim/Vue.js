@@ -11,6 +11,34 @@ const routes = [
     component: HomeView, //
   },
   {
+    path:'',
+    name:"navbar",
+    component: () => import("../views/Navbar.vue"),
+    children: [
+      {
+          path: "/shop",
+          name: "shop",
+          component: () => import("../views/Shop.vue"),
+      },
+      {
+          path: "/shophome",
+          name: "shophome",
+          component: () => import("../views/ShopHome.vue"),
+      },
+      {
+          path: "/item",
+          name: "item",
+          component: () => import("../views/Item.vue"),
+      },
+      {
+          path: "/cart",
+          name: "cart",
+          component: () => import("../views/Cart.vue"),
+      },
+
+    ]
+  },
+  {
     path: "",
     name: "toolbar",
     component: () => import("../views/Toolbar.vue"),
@@ -36,28 +64,28 @@ const routes = [
         component: () => import("../views/Slicegrade.vue"),
       },
       {
-        path: '/simple',
-        name: 'simple',
-        component: () => import('../views/Simple.vue')
+        path: "/simple",
+        name: "simple",
+        component: () => import("../views/Simple.vue"),
       },
     ],
   },
   {
-    path: '/me3',
-    name: 'me3',
-    component: () => import('../views/Me3.vue')
+    path: "/me3",
+    name: "me3",
+    component: () => import("../views/Me3.vue"),
   },
   {
-    path: '/login',
-    name: 'login',
-    component: () => import('../views/Login.vue')
+    path: "/login",
+    name: "login",
+    component: () => import("../views/Login.vue"),
   },
   {
-    path: '/apicon',
-    name: 'apicon',
-    component: () => import('../views/Apicon.vue')
+    path: "/apicon",
+    name: "apicon",
+    component: () => import("../views/Apicon.vue"),
   },
-
+  
 ];
 
 const router = new VueRouter({
