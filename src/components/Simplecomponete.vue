@@ -14,7 +14,7 @@ export default {
         EventBus.$on('SimCallAlert', this.SimCallAlert)
     },
     methods: {
-        callMain() {
+        allMain() {
             EventBus.$emit('MainCallAlert')
         },
         SimCallAlert () {

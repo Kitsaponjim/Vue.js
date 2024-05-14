@@ -47,6 +47,17 @@ const routes = [
     name: 'me3',
     component: () => import('../views/Me3.vue')
   },
+  {
+    path: '/login',
+    name: 'login',
+    component: () => import('../views/Login.vue')
+  },
+  {
+    path: '/apicon',
+    name: 'apicon',
+    component: () => import('../views/Apicon.vue')
+  },
+
 ];
 
 const router = new VueRouter({
